@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "modules\\GoogleShopping\\": "src/"
+      "statuo\\GoogleShoppingFeed\\": "src/"
     }
   },
   "extra": {
@@ -17,9 +17,9 @@
     "hasCpSettings": true,
     "hasCpSection": false,
     "components": {
-      "elements": "modules\\GoogleShopping\\services\\ElementsService"
+      "elements": "statuo\\GoogleShoppingFeed\\services\\ElementsService"
     },
-    "class": "modules\\GoogleShopping\\GoogleShoppingFeed"
+    "class": "statuo\\GoogleShoppingFeed\\GoogleShoppingFeed"
   },
   "config": {
     "sort-packages": true
