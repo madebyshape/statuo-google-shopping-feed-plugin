@@ -6,12 +6,13 @@ use Craft;
 use craft\web\Controller;
 use craft\web\View;
 use statuo\GoogleShoppingFeed\GoogleShoppingFeed;
+use yii\web\Response;
 
 class FeedController extends Controller
 {
     protected $allowAnonymous = ['index'];
 
-    public function actionIndex()
+    public function actionIndex(): Response
     {
         $settings = GoogleShoppingFeed::getInstance()->getSettings();
         $products = GoogleShoppingFeed::$plugin->elements->getProducts(null, $settings);
