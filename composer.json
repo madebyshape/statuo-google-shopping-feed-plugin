@@ -1,0 +1,24 @@
+{
+  "name": "statuo/google-shopping-feed",
+  "description": "A Google Shopping feed for Craft Commerce",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "modules\\GoogleShopping\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Google Shopping Feed",
+    "handle": "google-shopping-feed",
+    "hasCpSettings": true,
+    "hasCpSection": false,
+    "components": {
+      "elements": "modules\\GoogleShopping\\services\\ElementsService"
+    },
+    "class": "modules\\GoogleShopping\\GoogleShoppingFeed"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
