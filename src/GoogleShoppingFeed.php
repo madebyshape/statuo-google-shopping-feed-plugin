@@ -16,7 +16,7 @@ class GoogleShoppingFeed extends Plugin
     public static $plugin;
     public $schemaVersion = '1.0.0';
 
-    public function init()
+    public function init(): void
     {
         parent::init();
         self::$plugin = $this;
