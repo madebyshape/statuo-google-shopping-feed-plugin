@@ -23,7 +23,7 @@ Out of the box, the plugin will give you 1 feed with all your Craft Commerce pro
 If you need more control over which products show up in the feed, or you want multiple feeds, have a look at the have a look at the [Twig functions](#twig-function). 
 
 ## Twig function
-If you want to use the plugin with regular entries, want to provide your own Element query or want to have multiple feeds, have a look at these function:
+The plugin can be used with regular entries, or work with a custom Element query and is capable of producing multiple feeds. Refer to functions below.
 
 ### Products - craft.googleshopping.products
 Works with any **Commerce Products** element query, and will use the default variant for each product
@@ -51,7 +51,7 @@ An optional second parameter can be added, to customise the field mapping.
             currency: 'USD' // ISO code of the currency you want to use
        }) }}
 
-If each of these fields are not present in the array, the feed will fail to validated and throw an exception.
+If each of these fields are not present in the array, the feed will fail to be validated and throw an exception.
 
 ---
 
