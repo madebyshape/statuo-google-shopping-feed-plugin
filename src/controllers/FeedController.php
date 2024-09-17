@@ -10,7 +10,7 @@ use yii\web\Response;
 
 class FeedController extends Controller
 {
-    protected $allowAnonymous = ['index'];
+    protected array|int|bool $allowAnonymous = ['index'];
 
     public function actionIndex(): Response
     {

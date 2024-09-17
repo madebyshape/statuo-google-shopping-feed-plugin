@@ -14,7 +14,7 @@ use yii\base\Event;
 class GoogleShoppingFeed extends Plugin
 {
     public static $plugin;
-    public $schemaVersion = '1.0.0';
+    public string $schemaVersion = '1.0.0';
 
     public function init(): void
     {
